@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Choco Delight</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark px-3 fixed-top"
+                style="background-color: #3d1f16; border-bottom: 2px solid #d4af37;">
+                <div class="container-fluid">
+                    <img src="image/logo.jpg" alt="Logo" width="50px" height="50px">
+
+                    <a class="navbar-brand fs-3 border-end border-secondary pe-3 border-2" href="#"
+                        style="color: #d4af37; font-family: 'Georgia', serif;"><b>&nbsp; Choco Delight</b></a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Our Story</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Collections
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Dark Chocolate</a></li>
+                                    <li><a class="dropdown-item" href="#">Milk Chocolate</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Gift Boxes</a></li>
+                                    <li><a class="dropdown-item" href="#">Sugar Free</a></li>
+                                    <li><a class="dropdown-item" href="#">Hot Cocoa</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search flavor..."
+                                aria-label="Search">
+                            <button class="btn btn-outline-light me-2"
+                                style="background-color: #d4af37; color: #3d1f16; border: none;"
+                                type="submit">Search</button>
+                            <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal"
+                                type="button">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="modal fade" id="loginModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #f8f1e9;">
+                        <div class="modal-header" style="background-color: #3d1f16; color: white;">
+                            <h4 class="modal-title">Welcome Back!</h4>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label class="form-label">Email address</label>
+                                <input type="email" class="form-control" placeholder="example@choco.com">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" placeholder="****">
+                            </div>
+                            <input type="checkbox"> Remember my preference
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn w-100" style="background-color: #3d1f16; color: white;"
+                                data-bs-dismiss="modal">Log in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="height: 100vh;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+
+            <div class="carousel-inner h-100">
+                <div class="carousel-item h-100 active">
+                    <img src="image/back11.jpg" class="d-block w-100 h-100" style="object-fit:2000;"
+                        alt="Dark Chocolate">
+                    <div class="carousel-caption d-block">
+                        <div class="overlay w-75 mx-auto rounded p-3 border border-warning"
+                            style="background-color: rgba(61, 31, 22, 0.7);">
+                            <h4 class="fs-5 fs-md-3" style="color: #d4af37;">DARK CHOCOLATE</h4>
+                            <p class="fs-6 fs-md-5 text-light">Experience the pure essence of premium cocoa in every
+                                single bite.</p>
+                            <button class="btn btn-outline-warning me-2 text-light">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item h-100">
+                    <img src="image/LUXURY GIFTS.jpg" class="d-block w-100 h-100" style="object-fit:2000;"
+                        alt="Luxury Gift Box">
+                    <div class="carousel-caption d-block">
+                        <div class="overlay w-75 mx-auto rounded p-3 border border-warning"
+                            style="background-color: rgba(61, 31, 22, 0.7);">
+                            <h4 class="fs-5 fs-md-3" style="color: #d4af37;">LUXURY GIFTS</h4>
+                            <p class="fs-6 fs-md-5 text-light">Make your special moments unforgettable with our
+                                handcrafted gift boxes.</p>
+                            <button class="btn btn-outline-warning me-2 text-light">Pre-order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item h-100">
+                    <img src="image/HOT COCOA.jpg" class="d-block w-100 h-100" style="object-fit: 2000;"
+                        alt="Premium Hot Chocolate">
+                    <div class="carousel-caption d-block">
+                        <div class="overlay w-75 mx-auto rounded p-3 border border-warning"
+                            style="background-color: rgba(61, 31, 22, 0.7);">
+                            <h4 class="fs-5 fs-md-3" style="color: #d4af37;">HOT COCOA</h4>
+                            <p class="fs-6 fs-md-5 text-light">Warm your soul with a cup of our rich, creamy, and
+                                authentic hot cocoa.</p>
+                            <button class="btn btn-outline-warning me-2 text-light">View Menu</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item h-100">
+                    <img src="image/CARAMEL BLISS.jpg" class="d-block w-100 h-100"
+                        style="object-fit: 2000;" alt="Chocolate Caramel">
+                    <div class="carousel-caption d-block">
+                        <div class="overlay w-75 mx-auto rounded p-3 border border-warning"
+                            style="background-color: rgba(61, 31, 22, 0.7);">
+                            <h4 class="fs-5 fs-md-3" style="color: #d4af37;">CARAMEL BLISS</h4>
+                            <p class="fs-6 fs-md-5 text-light">A magical blend of silky chocolate and rich, salty
+                                sea-salt caramel.</p>
+                            <button class="btn btn-outline-warning me-2 text-light">Try it</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="d-flex flex-column position-fixed top-50 end-0 translate-middle-y me-2 gap-3 social-icons opacity-75"
+            style="z-index: 1000;">
+            <a href="#" style="color:#ffc107;"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href="#" style="color:#ffc107;"><i class="fab fa-twitter-square fa-2x"></i></a>
+            <a href="#" style="color:#ffc107;"><i class="fab fa-whatsapp-square fa-2x"></i></a>
+            <a href="#" style="color:#ffc107;"><i class="fab fa-instagram-square fa-2x"></i></a>
+            <a href="#" style="color:#ffc107;"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+    </main>
+
+
+
+    <section>
+        <div class="container-fluid rounded p-4 shadow-sm"
+            style="background: linear-gradient(to right, #3d1f16, #5d3225);">
+            <h3 style="color: #d4af37; font-family: 'Georgia', serif;"><b>Welcome to Choco Delight</b></h3>
+            <p class="text-light" style="line-height: 1.8;">
+                Step into a world of pure indulgence where cocoa meets craftsmanship. At Choco Delight, we create
+                exquisite chocolates crafted with passion, precision, and the finest globally sourced ingredients.
+                From silky truffles to intense dark bars, we have redefined the art of confectionery to offer you
+                elegance and luxury in every bite.
+                Sit back, relax, and savor the excellence.
+            </p>
+            <button type="button" class="btn btn-warning text-dark fw-bold btn-learn-more"
+                style="background-color: #d4af37; border: none;">Learn Our Secret
+            </button>
+        </div>
+
+        <hr class="my-5" style="border-top: 2px solid #d4af37; opacity: 0.5;">
+
+        <div class="container-fluid rounded p-5 shadow-sm"
+            style="background-color: #3d1f16; border-left: 5px solid #d4af37;">
+            <h3 class="text-light text-center" style="letter-spacing: 2px;">
+                <i><b>The Most Luxurious Collections In Our Boutique</b></i>
+            </h3>
+        </div>
+
+        <div class="accordion mt-4 shadow" id="chocolateAccordion">
+            <div class="accordion-item" style="border: none;">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed fw-bold"
+                        style="background-color: #f8f1e9; color: #3d1f16;" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne">
+                        Premium Dark Collections
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#chocolateAccordion">
+                    <div class="accordion-body" style="background-color: #fffaf5; color: #5d3225;">
+                        A deep and intense experience made with up to 85% single-origin cocoa. Our dark chocolates are
+                        seasoned with sea salt, chili, or exotic fruits to highlight the natural richness of the bean.
+                        Perfectly tempered for a satisfying snap.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" style="border: none;">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed fw-bold"
+                        style="background-color: #f8f1e9; color: #3d1f16;" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo">
+                        Artisanal Truffles & Pralines
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#chocolateAccordion">
+                    <div class="accordion-body" style="background-color: #fffaf5; color: #5d3225;">
+                        Discover our signature handmade truffles. From classic ganache to liquid caramel and hazelnut
+                        pralines, each piece is a masterpiece coated in velvet-smooth chocolate and decorated by hand.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" style="border: none;">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed fw-bold"
+                        style="background-color: #f8f1e9; color: #3d1f16;" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree">
+                        Signature Gift Boxes
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#chocolateAccordion">
+                    <div class="accordion-body" style="background-color: #fffaf5; color: #5d3225;">
+                        The perfect gift for those who matter most. Our elegant boxes feature a curated selection of our
+                        best-sellers, from milk chocolate hearts to gold-leafed dark squares. Tailored for weddings,
+                        anniversaries, and corporate luxury.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5" style="border-top: 2px solid #d4af37; opacity: 0.5;">
+    </section>
+
+
+
+    <section>
+        <div class="container-fluid rounded p-4 shadow-sm" style="background-color: #3d1f16;">
+            <h3 class="text-light text-center" style="font-family: 'Georgia', serif;">
+                <i style="color: #d4af37;"><b>Translate from Arabic to English</b></i>
+            </h3>
+        </div>
+
+        <div class="container-fluid rounded p-3"
+            style="background: linear-gradient(to bottom, #f8f1e9 0%, #d7ccc8 50%, #a1887f 100%); border-bottom: 3px solid #3d1f16;">
+            <span class="fs-4" style="color: #3d1f16;"><b>Write And Translate</b></span>
+            <span class="fs-4" style="color: #cb532e;"><b>&nbsp; Press Here</b></span><br>
+
+            <button type="button" class="btn shadow-sm mt-2 btn-copy-chocolate" data-bs-toggle="modal"
+                data-bs-target="#myModal1">Copy
+            </button>
+            <span class="badge rounded-pill bg-dark ms-2 copiedLabel d-none">Copied!</span>
+
+            <br><br>
+            <div class="modal fade" id="myModal1" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog mt-5">
+                    <div class="modal-content" style="background-color: #f8f1e9; border: 2px solid #d4af37;">
+                        <div class="modal-header border-bottom border-warning">
+                            <h5 class="modal-title" style="color: #3d1f16;"><i>Restaurant</i></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" style="color: #3d1f16;">
+                            the message copied
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn" style="background-color: #3d1f16; color: #fff;"
+                                data-bs-dismiss="modal">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <textarea class="rounded mt-2 w-100 p-3 border-0 shadow-sm"
+                style="height: 150px; background-color: rgba(255, 255, 255, 0.8); color: #3d1f16; border-left: 5px solid #d4af37 !important;"
+                placeholder="Type your text here..."></textarea>
+        </div>
+
+        <hr class="my-5" style="border-top: 2px solid #d4af37; opacity: 0.3;">
+
+        <div class="container-fluid rounded p-4 shadow-sm" style="background-color: #3d1f16;">
+            <h3 class="text-light text-center" style="font-family: 'Georgia', serif;">
+                <i style="color: #d4af37;"><b>Translate from Arabic to French</b></i>
+            </h3>
+        </div>
+
+        <div class="container-fluid rounded p-3"
+            style="background: linear-gradient(to bottom, #f8f1e9 0%, #d7ccc8 100%); border-bottom: 3px solid #3d1f16;">
+            <span class="fs-4" style="color: #3d1f16;"><b>Write And Translate</b></span>
+            <span class="fs-4" style="color: #cb532e;"><b>&nbsp; Press Here</b></span><br>
+
+            <button type="button" class="btn shadow-sm mt-2 btn-copy-chocolate" data-bs-toggle="modal"
+                data-bs-target="#myModal1">Copy</button>
+            <br><br>
+            <textarea class="rounded mt-2 w-100 p-3 border-0 shadow-sm"
+                style="height: 150px; background-color: rgba(255, 255, 255, 0.8); border-left: 5px solid #d4af37 !important;"
+                placeholder="Type your text here..."></textarea>
+        </div>
+
+        <hr class="my-5" style="border-top: 2px solid #d4af37; opacity: 0.3;">
+
+        <div class="container-fluid rounded p-4 shadow-sm" style="background-color: #3d1f16;">
+            <h3 class="text-light text-center" style="font-family: 'Georgia', serif;">
+                <i style="color: #d4af37;"><b>Translate from Arabic to German</b></i>
+            </h3>
+        </div>
+
+        <div class="container-fluid rounded p-3"
+            style="background: linear-gradient(to bottom, #f8f1e9 0%, #d7ccc8 100%); border-bottom: 3px solid #3d1f16;">
+            <span class="fs-4" style="color: #3d1f16;"><b>Write And Translate</b></span>
+            <span class="fs-4" style="color: #cb532e;"><b>&nbsp; Press Here</b></span><br>
+            <button type="button" class="btn shadow-sm mt-2 btn-copy-chocolate" data-bs-toggle="modal"
+                data-bs-target="#myModal1">Copy</button>
+            <br><br>
+            <textarea class="rounded mt-2 w-100 p-3 border-0 shadow-sm"
+                style="height: 150px; background-color: rgba(255, 255, 255, 0.8); border-left: 5px solid #d4af37 !important;"
+                placeholder="Type your text here..."></textarea>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid"
+            style="background-image: url(image/back5.jpg); height: 350px; background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container-fluid rounded p-4 mt-5 shadow-sm text-center" style="background-color: #3d1f16;">
+            <h3 class="text-light m-0">
+                <i class="opacity-75"><b>..Popular Collections in our Boutique..</b></i>
+            </h3>
+        </div>
+
+        <div class="container my-5">
+            <div class="row g-4 justify-content-center text-start">
+
+                <div class="col-sm-4 col-10">
+                    <div class="card h-100 special-card border-0 shadow-sm">
+                        <div class="p-2 bg-white rounded-top">
+                            <img src="image/card1.jpg" class="card-img-top rounded" alt="Dark Selection"
+                                style="height: 250px; object-fit: cover;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3" style="color: #3d1f16;"><b><i>DARK SELECTION</i></b></h5>
+                            <div class="d-flex mb-3"><a href="#"
+                                    class="btn btn-warning text-dark fw-bold ms-auto px-4 shadow-sm"
+                                    style="background-color: #d4af37; border: none;">SHOW</a></div>
+                            <p class="card-text text-muted">Our signature dark selection mixed with rare herbs, creating
+                                a refreshing chocolate choice.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-10">
+                    <div class="card h-100 special-card border-0 shadow-sm">
+                        <div class="p-2 bg-white rounded-top">
+                            <img src="image/card2.jpg" class="card-img-top rounded" alt="Milk Delight"
+                                style="height: 250px; object-fit: cover;">
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title mb-3" style="color: #3d1f16;"><b><i>MILK DELIGHT</i></b></h5>
+                            <div class="d-flex mb-3"><a href="#"
+                                    class="btn btn-warning text-dark fw-bold ms-auto px-4 shadow-sm"
+                                    style="background-color: #d4af37; border: none;">SHOW</a></div>
+                            <p class="card-text text-muted">Delicious milk chocolate topped with mozzarella-cream, baked
+                                until the crust is golden crisp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-10">
+                    <div class="card h-100 special-card border-0 shadow-sm">
+                        <div class="p-2 bg-white rounded-top">
+                            <img src="image/card3.jpg" class="card-img-top rounded" alt="Caramel Lux"
+                                style="height: 250px; object-fit: cover;">
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title mb-3" style="color: #3d1f16;"><b><i>CARAMEL LUX</i></b></h5>
+                            <div class="d-flex mb-3"><a href="#"
+                                    class="btn btn-warning text-dark fw-bold ms-auto px-4 shadow-sm"
+                                    style="background-color: #d4af37; border: none;">SHOW</a></div>
+                            <p class="card-text text-muted">Juicy caramel marinated with spices, grilled to perfection
+                                and served with flavorful sauce.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-10">
+                    <div class="card h-100 special-card border-0 shadow-sm">
+                        <div class="p-2 bg-white rounded-top">
+                            <img src="image/card4.jpg" class="card-img-top rounded" alt="Royal Meals"
+                                style="height: 250px; object-fit: cover;">
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title mb-3" style="color: #3d1f16;"><b><i>ROYAL MEALS</i></b></h5>
+                            <div class="d-flex mb-3"><a href="#"
+                                    class="btn btn-warning text-dark fw-bold ms-auto px-4 shadow-sm"
+                                    style="background-color: #d4af37; border: none;">SHOW</a></div>
+                            <p class="card-text text-muted">Wholesome chocolate meals offering comforting flavors for
+                                everyday luxurious dining.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-10">
+                    <div class="card h-100 special-card border-0 shadow-sm">
+                        <div class="p-2 bg-white rounded-top">
+                            <img src="image/card5.jpg" class="card-img-top rounded" alt="Crispy Friedes"
+                                style="height: 250px; object-fit: cover;">
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title mb-3" style="color: #3d1f16;"><b><i>CRISPY FRIEDES</i></b></h5>
+                            <div class="d-flex mb-3"><a href="#"
+                                    class="btn btn-warning text-dark fw-bold ms-auto px-4 shadow-sm"
+                                    style="background-color: #d4af37; border: none;">SHOW</a></div>
+                            <p class="card-text text-muted">Crispy golden chocolate pieces seasoned with sweet salt,
+                                served hot and crunchy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-10">
+                    <div class="card h-100 special-card border-0 shadow-sm">
+                        <div class="p-2 bg-white rounded-top">
+                            <img src="image/card6.jpg" class="card-img-top rounded" alt="Shawerma"
+                                style="height: 250px; object-fit: cover;">
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title mb-3" style="color: #3d1f16;"><b><i>MARSHMALLOW BITES</i></b></h5>
+                            <div class="d-flex mb-3"><a href="#"
+                                    class="btn btn-warning text-dark fw-bold ms-auto px-4 shadow-sm"
+                                    style="background-color: #d4af37; border: none;">SHOW</a></div>
+                            <p class="card-text text-muted">Tender slices of marinated chocolate grilled on rotating
+                                spit, wrapped with sweet sauces.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-10">
+                    <div class="card h-100 special-card border-0 shadow-sm">
+                        <div class="p-2 bg-white rounded-top">
+                            <img src="image/card7.jpg" class="card-img-top rounded" alt="Meat"
+                                style="height: 250px; object-fit: cover;">
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title mb-3" style="color: #3d1f16;"><b><i>PRIME CHOCO</i></b></h5>
+                            <div class="d-flex mb-3"><a href="#"
+                                    class="btn btn-warning text-dark fw-bold ms-auto px-4 shadow-sm"
+                                    style="background-color: #d4af37; border: none;">SHOW</a></div>
+                            <p class="card-text text-muted">Succulent grilled chocolate prepared with smoky flavor in
+                                every juicy bite.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-10">
+                    <div class="card h-100 special-card border-0 shadow-sm">
+                        <div class="p-2 bg-white rounded-top">
+                            <img src="image/card8.jpg" class="card-img-top rounded" alt="Pastrie"
+                                style="height: 250px; object-fit: cover;">
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title mb-3" style="color: #3d1f16;"><b><i>GOLDEN PASTRIE</i></b></h5>
+                            <div class="d-flex mb-3"><a href="#"
+                                    class="btn btn-warning text-dark fw-bold ms-auto px-4 shadow-sm"
+                                    style="background-color: #d4af37; border: none;">SHOW</a></div>
+                            <p class="card-text text-muted">Flaky pastries filled with sweet cream, baked until golden,
+                                offering crispy texture.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container-fluid"
+            style="background-image: url(image/back5.jpg); height: 350px; background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+        </div>
+        <hr>
+    </section>
+
+
+    <section>
+        <div class="container-fluid rounded py-4 shadow-sm text-center"
+            style="background-color: #3d1f16; border-bottom: 3px solid #d4af37;">
+            <h3 class="text-light m-0"><i><b>..Special Thanks to Our Success Partners..</b></i></h3>
+        </div>
+
+        <div class="container px-5" style="margin-top: 80px; margin-bottom: 50px;">
+            <div class="row justify-content-center" style="gap: 50px;">
+
+                <div class="col-sm-3 col-8">
+                    <div class="card bg-dark text-white custom-card shadow"
+                        style="height: 250px; border-radius: 20px; border: none; overflow: hidden;">
+
+                        <img src="image/UI-UX.jpg" class="card-img h-100" alt="salem"
+                            style="border-radius: 20px; object-fit: cover; object-position: 50% 60%; opacity: 0.45;">
+
+                        <div class="card-img-overlay h-100"
+                            style="background-color: rgba(65, 38, 30, 0.4); border-radius: 20px;">
+                            <h5 class="card-title" style="font-size:15px; color: #f8f1e9;"><b><i>All Thanks And
+                                        Appreciation</i></b></h5>
+                            <p class="card-text small" style="color: #eaddcf;"><span style="font-size: 12px;">🕔</span>
+                                Jan 14, 2026</p>
+
+                            <div class="position-absolute shadow-sm"
+                                style="width: 75px; height: 100px; bottom: 55px; left: 20px; border-radius: 50% / 40%; border: 2px solid rgba(255,255,255,0.8); overflow: hidden; background: #000;">
+                                <img src="image/UI-UX.jpg" alt="Profile"
+                                    style="width: 100%; height: 100%; object-fit: cover; object-position: center; transform: scale(1.9)  translateY(8px);">
+                            </div>
+
+                            <div style="position: absolute; bottom: 8px; left: 20px;">
+                                <p class="mb-0 fw-bold"
+                                    style="font-size: 0.95rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Eng. Salem
+                                    Adham</p>
+                                <p class="mb-0 fst-italic"
+                                    style="font-size: 0.8rem; font-weight: bold; color: #ffc402;">Director Of UI/UX
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-8">
+                    <div class="card bg-dark text-white custom-card shadow"
+                        style="height: 250px; border-radius: 20px; border: none; overflow: hidden;">
+
+                        <img src="image/creator.jpg" class="card-img h-100" alt="Zaki"
+                            style="border-radius: 20px; object-fit: cover; object-position: 50% 15%; opacity: 0.45;">
+
+                        <div class="card-img-overlay h-100"
+                            style="background-color: rgba(65, 38, 30, 0.4); border-radius: 20px;">
+                            <h5 class="card-title" style="font-size:15px; color: #f8f1e9;"><b><i>All Thanks And
+                                        Appreciation</i></b></h5>
+                            <p class="card-text small" style="color: #eaddcf;"><span style="font-size: 12px;">🕔</span>
+                                Jan 14, 2026</p>
+
+                            <div class="position-absolute shadow-sm"
+                                style="width: 75px; height: 100px; bottom: 55px; left: 20px; border-radius: 50% / 40%; border: 2px solid rgba(255,255,255,0.8); overflow: hidden; background: #000;">
+                                <img src="image/creator.jpg" alt="Profile"
+                                    style="width: 100%; height: 100%; object-fit: cover; object-position: center; transform: scale(1.6) translateY(19px);">
+                            </div>
+
+                            <div style="position: absolute; bottom: 8px; left: 20px;">
+                                <p class="mb-0 fw-bold"
+                                    style="font-size: 0.95rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Eng. Zaki
+                                    Sabry</p>
+                                <p class="mb-0 fst-italic" style="font-size: 0.8rem;font-weight: bold; color: #ffc402;">
+                                    Content Creator
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-8">
+                    <div class="card bg-dark text-white custom-card shadow"
+                        style="height: 250px; border-radius: 20px; border: none; overflow: hidden;">
+
+                        <img src="image/developer.jpg" class="card-img h-100" alt="Mohamed"
+                            style="border-radius: 20px; object-fit: cover; object-position: 50% 0%; opacity: 0.45;">
+
+                        <div class="card-img-overlay h-100"
+                            style="background-color: rgba(65, 38, 30, 0.4); border-radius: 20px;">
+                            <h5 class="card-title" style="font-size:15px; color: #f8f1e9;"><b><i>All Thanks And
+                                        Appreciation</i></b></h5>
+                            <p class="card-text small" style="color: #eaddcf;"><span style="font-size: 12px;">🕔</span>
+                                Jan 14, 2026</p>
+
+                            <div class="position-absolute shadow-sm"
+                                style="width: 75px; height: 100px; bottom: 55px; left: 20px; border-radius: 50% / 40%; border: 2px solid rgba(255,255,255,0.8); overflow: hidden; background: #000;">
+                                <img src="image/developer.jpg" alt="Profile"
+                                    style="width: 100%; height: 100%; object-fit: cover; object-position: center; transform: scale(1.9) translateY(25px);">
+                            </div>
+
+                            <div style="position: absolute; bottom: 8px; left: 20px;">
+                                <p class="mb-0 fw-bold"
+                                    style="font-size: 0.95rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Eng. Mohamed
+                                    Ibrahim</p>
+                                <p class="mb-0 fst-italic"
+                                    style="font-size: 0.8rem; font-weight: bold; color: #ffc402;">Web Developer
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+        <h3 class="text-center" style="color: #3d1f16; margin-bottom: 50px; letter-spacing: 2px;">
+            <b><i>CHOCOLATE SECRETS & PODCASTS</i></b>
+        </h3>
+
+        <div class="container-md">
+
+            <div class="card mb-5 shadow chocolate-card">
+                <div class="row g-0 h-100">
+                    <div class="col-md-8 d-flex order-2 order-md-1 h-100">
+                        <div class="card-body px-4 px-lg-4 pt-4 pb-3 d-flex flex-column justify-content-between">
+                            <div>
+                                <h3 class="card-title fs-3" style="color: #b08d57; margin-top: 0;"><b><i>Mastering the
+                                            Art of Tempered Chocolate</i></b></h3>
+                                <p class="card-text border-bottom d-inline-block border-2 pb-1 mb-3"
+                                    style="font-size: 13px; color: #8d7770; border-color: #d4af37 !important;"><b>Mon.
+                                        May 25th 2026</b></p>
+                                <p class="card-text custom-paragraph" style="line-height: 1.8">
+                                    In our state-of-the-art chocolate laboratory, perfection is the only standard we
+                                    recognize. We dive deep into the intricate science of tempering, where precise heat
+                                    and controlled motion meet to create that signature snap and glossy finish. Our
+                                    master chocolatiers carefully balance cocoa butter crystals to ensure that every
+                                    single bar we produce melts perfectly on your palate, delivering a true symphony of
+                                    luxury and pure indulgence in every single exquisite bite.
+                                </p>
+                            </div>
+                            <div class="d-flex flex-wrap mt-4 mt-auto">
+                                <a href="#" class="btn rounded-pill px-3 me-2 mb-2 custom-btn"
+                                    style="background: #3d1f16; color: white; font-size: 14px; border: none;">🎙
+                                    Podcast</a>
+                                <a href="#" class="btn rounded-pill px-3 me-2 mb-2 custom-btn"
+                                    style="background: #f8f1e9; border: 1px solid #d4af37; color: #3d1f16; font-size: 14px;">🕔
+                                    43 mins</a>
+                                <a href="#" class="btn rounded-pill px-4 mb-2 custom-btn"
+                                    style="background: #d4af37; color: white; font-weight: bold; font-size: 14px; border: none;">▶
+                                    Play Episode</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 order-1 order-md-2 d-none d-md-block h-100 zoom-container-right">
+                        <img src="image/image-1.jpg" class="card-img-fixed clip-img-right" alt="Tempering">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-5 shadow chocolate-card">
+                <div class="row g-0 h-100">
+                    <div class="col-md-4 d-none d-md-block h-100 zoom-container-left">
+                        <img src="image/image-2.jpg" class="card-img-fixed clip-img-left" alt="Beans">
+                    </div>
+                    <div class="col-md-8 d-flex h-100">
+                        <div
+                            class="card-body px-4 px-lg-4 pt-4 pb-3 text-md-start d-flex flex-column justify-content-between">
+                            <div>
+                                <h3 class="card-title fs-3" style="color: #b08d57; margin-top: 0;"><b><i>From Bean to
+                                            Bar: An Ethical Journey</i></b></h3>
+                                <p class="card-text border-bottom d-inline-block border-2 pb-1 mb-3"
+                                    style="font-size: 13px; color: #8d7770; border-color: #d4af37 !important;"><b>Tue.
+                                        June 10th 2026</b></p>
+                                <p class="card-text custom-paragraph" style="line-height: 1.8">
+                                    Travel with us to the lush rainforests where our ethical journey begins. We source
+                                    only the finest single-origin cocoa beans, directly supporting sustainable farming
+                                    communities. In this episode, learn how our unique roasting process unlocks hidden
+                                    notes of exotic fruit and spice, turning raw beans into the rich liquid gold that
+                                    defines our heritage, while ensuring that every step of production honors the earth
+                                    and its hardworking people.
+                                </p>
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-md-end mt-4 mt-auto">
+                                <a href="#" class="btn rounded-pill px-3 me-2 mb-2 custom-btn"
+                                    style="background: #3d1f16; color: white; font-size: 14px; border: none;">🎙
+                                    Podcast</a>
+                                <a href="#" class="btn rounded-pill px-3 me-2 mb-2 custom-btn"
+                                    style="background: #f8f1e9; border: 1px solid #d4af37; color: #3d1f16; font-size: 14px;">🕔
+                                    30 mins</a>
+                                <a href="#" class="btn rounded-pill px-4 mb-2 custom-btn"
+                                    style="background: #d4af37; color: white; font-weight: bold; font-size: 14px; border: none;">▶
+                                    Play Episode</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-5 shadow chocolate-card">
+                <div class="row g-0 h-100">
+                    <div class="col-md-8 d-flex order-2 order-md-1 h-100">
+                        <div class="card-body px-4 px-lg-4 pt-4 pb-3 d-flex flex-column justify-content-between">
+                            <div>
+                                <h3 class="card-title fs-3" style="color: #b08d57; margin-top: 0;"><b><i>Infusions: The
+                                            Alchemy of Flavors</i></b></h3>
+                                <p class="card-text border-bottom d-inline-block border-2 pb-1 mb-3"
+                                    style="font-size: 13px; color: #8d7770; border-color: #d4af37 !important;"><b>Sun.
+                                        July 05th 2026</b></p>
+                                <p class="card-text custom-paragraph" style="line-height: 1.8">
+                                    Why stop at classic flavors when the world is full of wonders? Our master
+                                    chocolatiers experiment with rare spices, sea salts, and floral infusions to push
+                                    the boundaries of taste. Join us as we explore the stories behind our daring
+                                    collections and learn how we find the perfect balance between contrasting
+                                    ingredients, crafting an unforgettable sensory experience that lingers long after
+                                    the very last delicious morsel.
+                                </p>
+                            </div>
+                            <div class="d-flex flex-wrap mt-4 mt-auto">
+                                <a href="#" class="btn rounded-pill px-3 me-2 mb-2 custom-btn"
+                                    style="background: #3d1f16; color: white; font-size: 14px; border: none;">🎙
+                                    Podcast</a>
+                                <a href="#" class="btn rounded-pill px-3 me-2 mb-2 custom-btn"
+                                    style="background: #f8f1e9; border: 1px solid #d4af37; color: #3d1f16; font-size: 14px;">🕔
+                                    25 mins</a>
+                                <a href="#" class="btn rounded-pill px-4 mb-2 custom-btn"
+                                    style="background: #d4af37; color: white; font-weight: bold; font-size: 14px; border: none;">▶
+                                    Play Episode</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 order-1 order-md-2 d-none d-md-block h-100 zoom-container-right">
+                        <img src="image/image-3.jpg" class="card-img-fixed clip-img-right" alt="Alchemy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-5 shadow chocolate-card">
+                <div class="row g-0 h-100">
+                    <div class="col-md-4 d-none d-md-block h-100 zoom-container-left">
+                        <img src="image/image-4.jpg" class="card-img-fixed clip-img-left" alt="Gifting">
+                    </div>
+                    <div class="col-md-8 d-flex h-100">
+                        <div
+                            class="card-body px-4 px-lg-4 pt-4 pb-3 text-md-start d-flex flex-column justify-content-between">
+                            <div>
+                                <h3 class="card-title fs-3" style="color: #b08d57; margin-top: 0;"><b><i>The Elegance of
+                                            Chocolate Gifting</i></b></h3>
+                                <p class="card-text border-bottom d-inline-block border-2 pb-1 mb-3"
+                                    style="font-size: 13px; color: #8d7770; border-color: #d4af37 !important;"><b>Wed.
+                                        Aug 12th 2026</b></p>
+                                <p class="card-text custom-paragraph" style="line-height: 1.8">
+                                    Chocolate is far more than a simple treat; it is a timeless message of love and
+                                    gratitude. We explore the art of luxury packaging and the history of chocolate as a
+                                    gift for royalty. Discover how we curate our signature boxes to ensure that the
+                                    unboxing experience is just as sophisticated as the very first bite, transforming a
+                                    simple gesture into a magnificent celebration of elegance and truly heartfelt
+                                    connection.
+                                </p>
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-md-end mt-4 mt-auto">
+                                <a href="#" class="btn rounded-pill px-3 me-2 mb-2 custom-btn"
+                                    style="background: #3d1f16; color: white; font-size: 14px; border: none;">🎙
+                                    Podcast</a>
+                                <a href="#" class="btn rounded-pill px-3 me-2 mb-2 custom-btn"
+                                    style="background: #f8f1e9; border: 1px solid #d4af37; color: #3d1f16; font-size: 14px;">🕔
+                                    50 mins</a>
+                                <a href="#" class="btn rounded-pill px-4 mb-2 custom-btn"
+                                    style="background: #d4af37; color: white; font-weight: bold; font-size: 14px; border: none;">▶
+                                    Play Episode</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container w-75" style="margin-top: 80px; margin-bottom: 80px;">
+            <div class="row justify-content-center">
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card special-card2 shadow-sm" style="width: 11rem; height: 190px;">
+                        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center">
+                            <h4 class="card-title fs-6" style="color: #3d1f16;"><b><i>Subscribe Now</i></b></h4>
+                            <img src="image/subscribe.jpg" alt="Social" class="img-fluid my-2"
+                                style="width: 80px; height: 80px; object-fit: contain;">
+                            <a href="#" class="subscribe-link mt-2">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card special-card2 shadow-sm" style="width: 11rem; height: 190px;">
+                        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center">
+                            <h4 class="card-title fs-6" style="color: #3d1f16;"><b><i>Follow Us</i></b></h4>
+                            <img src="image/follow.jpg" alt="Social" class="img-fluid my-2"
+                                style="width: 80px; height: 80px; object-fit: contain;">
+                            <a href="#" class="subscribe-link mt-2">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card special-card2 shadow-sm" style="width: 11rem; height: 190px;">
+                        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center">
+                            <h4 class="card-title fs-6" style="color: #3d1f16;"><b><i>Our Channel</i></b></h4>
+                            <img src="image/channel.jpg" alt="Social" class="img-fluid my-2"
+                                style="width: 80px; height: 80px; object-fit: contain;">
+                            <a href="#" class="subscribe-link mt-2">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card special-card2 shadow-sm" style="width: 11rem; height: 190px;">
+                        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center">
+                            <h4 class="card-title fs-6" style="color: #3d1f16;"><b><i>Join Community</i></b></h4>
+                            <img src="image/cummunity.jpg" alt="Social" class="img-fluid my-2"
+                                style="width: 80px; height: 80px; object-fit: contain;">
+                            <a href="#" class="subscribe-link mt-2">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer style="background-color: #2a1610; color: #f8f1e9; margin-top: 100px; border-top: 4px solid #d4af37;">
+        <div class="container py-5">
+            <div class="row text-center">
+
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <img src="image/logo.jpg" alt="Logo" class="rounded-circle mb-3 shadow"
+                        style="width:90px; height:90px; border: 2px solid #d4af37; object-fit: cover;">
+                    <h4 class="fs-5 mb-3" style="color: #d4af37; letter-spacing: 1px;"><b><i>Choco Delight Co.</i></b>
+                    </h4>
+                    <div class="contact-info mt-4" style="font-size: 15px; opacity: 0.9;">
+                        <p class="mb-1"><i class="fas fa-phone"></i> Tel: +20 100 000 000</p>
+                        <p class="mb-1"><i class="fas fa-map-marker-alt"></i> Address: Cairo, EGYPT</p>
+                        <p class="mb-0"><i class="fas fa-envelope"></i> Email: info@chocluxe.com</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <img src="image/logo.jpg" alt="Links" class="rounded-circle mb-3 shadow"
+                        style="width:90px; height:90px; border: 2px solid #d4af37; object-fit: cover;">
+                    <h4 class="fs-5 mb-3" style="color: #d4af37; letter-spacing: 1px;"><b><i>QUICK LINKS</i></b></h4>
+                    <ul class="list-unstyled" style="font-size: 15px; opacity: 0.9; line-height: 2;">
+                        <li><a href="#" style="color: #f8f1e9; text-decoration: none;">Visit Our Gallery</a></li>
+                        <li><a href="#" style="color: #f8f1e9; text-decoration: none;">Healthy Selection</a></li>
+                        <li><a href="#" style="color: #f8f1e9; text-decoration: none;">Special Gift Boxes</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="image/logo.jpg" alt="Vision" class="rounded-circle mb-3 shadow"
+                        style="width:90px; height:90px; border: 2px solid #d4af37; object-fit: cover;">
+                    <h4 class="fs-5 mb-3" style="color: #d4af37; letter-spacing: 1px;"><b><i>OUR VISION</i></b></h4>
+                    <div style="font-size: 15px; opacity: 0.9; line-height: 1.8;">
+                        <p class="mb-1">Crafting Premium Moments</p>
+                        <p class="mb-1">Sustainable Cocoa Sourcing</p>
+                        <p class="mb-0">The Best Service For You</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div style="background-color: #1a0d09">
+            <hr style="border-color: rgba(212, 175, 55, 0.3); margin: 0;">
+            <div class="container py-3">
+                <p class="text-center mb-0" style="font-size: 14px; letter-spacing: 1px;">
+                    <span style="color: #f8f1e9;">© 2026 <b>Choco Delight</b>. All Rights Reserved.</span><br
+                        class="d-md-none">
+                    <span style="color: #d4af37; margin-left: 10px;">Designed By <b>Eng/ Mohamed Ibrahim
+                            Salah</b></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
